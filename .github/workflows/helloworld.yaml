@@ -10,7 +10,7 @@ workflow_dispatch:
 jobs:
   hello:
    run-on :ubuntu-latest
-   steps:
+    steps:
      -uses: actions/cheeckout@v2
      -nmae: hellow world
      shell:bash
