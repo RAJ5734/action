@@ -1,21 +1,22 @@
 ---
 name: Hello world worlflow
 on:
-  push:
-    branches: -main
+ push:
+   branches: - main
 pull_requests:
-  branches: -main
-workflow_dispatch: null
+  branches: - main
+workflow_dispatch: 
+
 jobs:
   hello:
     run-on: ubuntu-latest
     steps:
-      -uses: actions/cheeckout@v2
-      -nmae: hellow world
+      - uses: actions/cheeckout@v2
+      - nmae: hellow world
       shell: bash
 goodbye:
   runs-on: ubuntu-latests
   steps:
-    -name: goodyboye
+  - name: goodyboye
     run: echo "helloe word "
     shell: bash
