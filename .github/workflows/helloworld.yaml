@@ -4,7 +4,7 @@ on:
  push:
    branches: 
    - main
-pull_requests:
+pull_request:
   branches:
   - main
 workflow_dispatch: 
@@ -13,7 +13,7 @@ jobs:
   hello:
     run-on: ubuntu-latest
     steps:
-      - uses: actions/cheeckout@v2
+      - uses: actions/checkout@v2
       - name: "Hello world"
         shell: bash
 goodbye:
